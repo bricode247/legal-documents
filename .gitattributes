@@ -1,0 +1,23 @@
+# Forzar LF en todos los archivos de texto
+# Evita problemas de line endings cruzados entre Windows/Linux/Mac/Git
+
+* text=auto eol=lf
+
+# Excepciones: archivos que requieren CRLF especificamente
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Archivos binarios: no tocar
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+
+# Deshabilitar la conversion en archivos generados
+package-lock.json -text
